@@ -1,6 +1,6 @@
 # Syndio Backend App
 
-Using the `employees.db` sqlite datbase in this repository with the following table/data:
+Using the `employees.db` sqlite database in this repository with the following table/data:
 
 ```
 sqlite> .open employees.db
@@ -15,7 +15,7 @@ sqlite> SELECT * FROM employees;
 6|female
 ```
 
-Create an api with an endpoint `/employees` that reads from this database and returns the following json response (content matters not format/indent):
+Create an api with an endpoint `/employees` that reads from this database and returns the following JSON response (content matters not format/indent):
 
 ```
 [
@@ -49,30 +49,30 @@ Create an api with an endpoint `/employees` that reads from this database and re
 ## Requirements
 
 - The api must take an environment variable `PORT` and respond to requests on that port.
-- You provide basic instructions required to run the api.
-- `curl localhost:$PORT/employees` returns the described response
+- You provide basic setup instructions required to run the api.
+- `curl localhost:$PORT/employees` returns the described response.
 
 ## Success
 
-- We can run the api from your instructions
+- We can run the api from your setup instructions
 - The curl returns the described response
 - The api is written in Python or Go
 
 ## Not Required
 
-- Detailed documentation
 - Tests
 - Logging, monitoring, or anything more than basic error handling
 
 ## Submission
 
-- Respond to the email you recieved giving you this with:
+- Respond to the email you received giving you this with:
   - a zip file, or link to a git repo
   - instructions on how to setup and run the code (could be included w/ zip/git)
-- We'll test it and get back to you.
+- We'll follow the setup instructions to test it on a local machine, then we'll get back to you.
 
 ## Notes
 
+- Keep it simple
 - We expect this to take less than an hour, please try and limit your effort to that window.
 - If the api works, and returns what we requested, its a success.
 - Anything extra (tests, other endpoints, ...) is not worth bonus/etc.

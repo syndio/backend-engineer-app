@@ -16,7 +16,7 @@ sqlite> SELECT * FROM employees;
 7|non-binary
 ```
 
-First, create an api with an endpoint `/employees` that reads from this database and returns a list of all of the employees and their data as JSON. It should look like the following JSON response (content matters not format/indent):
+First, create an api with an endpoint `/employees` that reads from this database and returns a list of all of the employees and their data as JSON. It should look like the following JSON response (content matters, format/indent does not):
 
 ```
 [
@@ -30,7 +30,7 @@ First, create an api with an endpoint `/employees` that reads from this database
 ]
 ```
 
-And second, create an api with an endpoint `/count` that reads from the database and returns a list of each gender and the count of employees that identify as that gender. It should look like the following JSON response (content matters not format/indent):
+And second, create an api with an endpoint `/count` that reads from the database and returns a list of each gender and the count of employees that identify as that gender. It should look like the following JSON response (content matters, format/indent does not):
 ```
 [
     { "gender": "male", "count": 3},

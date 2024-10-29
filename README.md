@@ -16,39 +16,28 @@ sqlite> SELECT * FROM employees;
 7|non-binary
 ```
 
-First, create an api with an endpoint `/employees` that reads from this database and returns a list of all of the employees and their data as JSON. It should look like the following JSON response (content matters, format/indent does not):
-
+1) create an api with an endpoint that saves the incoming job data for the corresponding employee.
+   2) The incoming data will look as follows:
 ```
 [
-    { "id": 1, "gender": "male" },
-    { "id": 2, "gender": "male" },
-    { "id": 3, "gender": "male" },
-    { "id": 4, "gender": "female" },
-    { "id": 5, "gender": "female" },
-    { "id": 6, "gender": "female" },
-    { "id": 7, "gender": "non-binary" },
-]
-```
-
-And second, create an api with an endpoint `/count` that reads from the database and returns a list of each gender and the count of employees that identify as that gender. It should look like the following JSON response (content matters, format/indent does not):
-```
-[
-    { "gender": "male", "count": 3},
-    { "gender": "female", "count": 3},
-    { "gender": "non-binary", "count": 1},
+  { "id": 1, department": "Engineering", "job_title": "Senior Enginer" },
+  { "id": 2, department": "Engineering", "job_title": "Super Senior Enginer" },
+  { "id": 3, "department": "Sales", "job_title": "Head of Sales"},
+  { "id": 4, "department": "Support", "job_title": "Tech Support" },
+  { "id": 5, "department": "Engineering", "job_title": "Junior Enginer" },
+  { "id": 6, "department": "Sales", "job_title": "Sales Rep" },
+  { "id": 7, "department": "Marketing", "job_title": "Senior Marketer" },
 ]
 ```
 
 ## Requirements
 
 - The api must take an environment variable `PORT` and respond to requests on that port.
-- You provide basic setup instructions required to run the api.
-- `curl localhost:$PORT/employees` returns the first response (ignoring formatting) and `curl localhost:$PORT/count` returns the second response (ignoring formatting).
+- You provide basic setup instructions required to run the api, how to ingest the data through the new endpoint, and a way to update the existing database given to you.
 
 ## Success
 
-- We can run the api from your setup instructions
-- The curl returns the described responses
+- We can run the api and ingest data from your setup instructions
 - The api is written in Python or Go
 
 ## Not Required

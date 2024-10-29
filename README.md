@@ -33,7 +33,10 @@ sqlite> SELECT * FROM employees;
 ## Requirements
 
 - The api must take an environment variable `PORT` and respond to requests on that port.
-- You provide basic setup instructions required to run the api, how to ingest the data through the new endpoint, and a way to update the existing database given to you.
+- Provide basic setup instructions for:
+  - What is required to run the api
+  - how to ingest the data through the new endpoint,
+  - a way to update the existing database given to you.
 
 ## Success
 
